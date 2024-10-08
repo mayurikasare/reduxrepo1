@@ -1,0 +1,113 @@
+/* Styles for the product container */
+.productContainer {
+  display: flex;
+  flex-wrap: wrap; /* Ensures that the items wrap to the next line if necessary */
+  justify-content: space-around; /* Spaces out items evenly */
+  gap: 20px; /* Adds spacing between the product items */
+  padding: 20px;
+}
+
+/* Styles for individual product cards */
+.productContainer .product {
+  flex: 1 1 250px; /* Makes the product box flexible and take up at least 250px */
+  max-width: 300px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.productContainer .product:hover {
+  transform: translateY(-5px); /* Adds a hover effect to lift the product card */
+}
+
+.productContainer .product img {
+  width: 100%; /* Makes the image fill the card width */
+  height: '200px';
+}
+
+.productContainer .product h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.productContainer .product p {
+  font-size: 1rem;
+  color: #777;
+  margin: 10px 0;
+}
+
+.productContainer .product .price {
+  font-size: 1.4rem;
+  color: #28a745;
+  margin: 10px 0;
+}
+
+
+.cart {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.productCount {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.cartItem:hover {
+  transform: translateY(-5px);
+}
+
+.cartItemImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.cartItemDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartItemDetails h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.cartItemDetails p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 5px;
+}
